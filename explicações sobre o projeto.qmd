@@ -1,14 +1,15 @@
-**"Explicações sobre o projeto"**
-
-**author: "Vivian Vense Melotto"**
-
-**date: "2024-08-09"**
+---
+title: "Explicações sobre o projeto"
+author: "Vivian Vense Melotto"
+date: "2024-08-09"
+self_contained: true
+---
 
 **---**
 
-**Projeto Ficticio de um e-commerce que testará a hipótese sobre : os clientes fieis compram mais da mesma marca se comparado com os cliente não fieis.**
+**"Projeto fictício de um e-commerce que testará a hipótese de que clientes fiéis compram mais da mesma marca em comparação com clientes não fiéis."**
 
-**1. Instalação de pacotes**
+**##1. Instalação de pacotes\*\***
 
 **Passo 1:** Instalar e Carregar os Pacotes Necessários \# Instalar e carregar os pacotes necessários:
 
@@ -28,17 +29,17 @@ library(tidyr)
 
 ```
 
-**2. Geração dos Dados Fictícios**
+**##2. Geração dos Dados Fictícios\*\***
 
 Agora, vamos gerar um conjunto de dados fictício com 100 clientes, 5 marcas e 500 compras. Cada compra será registrada com o cliente que a fez, a marca comprada e o valor da compra.
 
-**#2.1 Definir um seed para reprodutibilidade**
+#2.1 Definir um seed para reprodutibilidade\*\*
 
 ```{r}
 set.seed(123)
 ```
 
-**#2.2 Número de clientes, marcas e compras**
+#2.2 Número de clientes, marcas e compras\*\*
 
 ```{r}
 n_clients <- 100
@@ -47,14 +48,14 @@ n_purchases <- 500
 
 ```
 
-**#2.3 Gerar os nomes dos clientes e marcas**
+#2.3 Gerar os nomes dos clientes e marcas\*\*
 
 ```{r}
 clientes <- paste("Cliente", 1:n_clients)
 marcas <- paste("Marca", 1:n_brands)
 ```
 
-**#2.4 Gerar dados de compras com cliente, marca e valor da compra**
+#2.4 Gerar dados de compras com cliente, marca e valor da compra\*\*
 
 ```{r}
 data <- data.frame(
@@ -64,13 +65,13 @@ data <- data.frame(
 )
 ```
 
-**#2.5 Exibir as primeiras linhas dos dados para verificar**
+#2.5 Exibir as primeiras linhas dos dados para verificar\*\*
 
 ```{r}
 head(data)
 ```
 
-**3. Identificação de Clientes Fiéis**
+##3. Identificação de Clientes Fiéis\*\*\*\*
 
 Agora vamos identificar quais clientes são "fiéis" a uma loja, ou seja, aqueles que compram frequentemente a mesma marca:
 
@@ -82,7 +83,7 @@ compras_por_cliente_marca <- data %>%
   summarise(NumCompras = n(), .groups = 'drop')
 ```
 
-**#3.2 Calcular a proporção de compras por marca para cada cliente**
+#3.2 Calcular a proporção de compras por marca para cada cliente\*\*
 
 ```{r}
 proporcao_compras <- compras_por_cliente_marca %>%
@@ -90,7 +91,7 @@ proporcao_compras <- compras_por_cliente_marca %>%
   mutate(Proporcao = NumCompras / sum(NumCompras))
 ```
 
-**#3.3 Determinar a marca mais comprada por cada cliente**
+#3.3 Determinar a marca mais comprada por cada cliente\*\*
 
 ```{r}
 fidelidade_cliente <- proporcao_compras %>%
@@ -98,7 +99,7 @@ fidelidade_cliente <- proporcao_compras %>%
             ProporcaoFrequente = max(Proporcao))
 ```
 
-**3.4 Adicionar ao conjunto de dados a informação se o cliente é "fiel" ou não**
+#3.4 Adicionar ao conjunto de dados a informação se o cliente é "fiel" ou não\*\*
 
 ```{r}
 data <- data %>%
@@ -112,11 +113,11 @@ data <- data %>%
 head(data)
 ```
 
-**4. Teste de Hipótese**
+**##4. Teste de Hipótese\*\***
 
 Vamos testar a hipótese de que clientes fiéis compram mais da mesma marca do que os clientes não fiéis. Para isso, realizaremos um teste t:
 
-**#4.1 Calcular o total de compras por cliente**
+#4.1 Calcular o total de compras por cliente
 
 ```{r}
 compras_totais <- data %>%
@@ -124,13 +125,13 @@ compras_totais <- data %>%
   summarise(TotalCompras = sum(ValorCompra), .groups = 'drop')
 ```
 
-**#4.2 Realizar o teste t para comparar as médias**
+#4.2 Realizar o teste t para comparar as médias\*\*
 
 ```{r}
 teste_t <- t.test(TotalCompras ~ Fiel, data = compras_totais)
 ```
 
-**#4.3 Exibir os resultados do teste t**
+#4.3 Exibir os resultados do teste t\*\*
 
 ```{r}
 print(teste_t)
@@ -138,11 +139,11 @@ print(teste_t)
 
 print(teste_t)
 
-###5. Visualização dos Resultados
+**##5. Visualização dos Resultados**
 
 Finalmente, vamos visualizar os resultados com um boxplot, comparando o total de compras entre clientes fiéis e não fiéis:
 
-**#5.1 Criar um boxplot para visualizar as compras de clientes fiéis e não fiéis**
+#5.1 Criar um boxplot para visualizar as compras de clientes fiéis e não fiéis\*\*
 
 ```{r}
 # Criar um boxplot para visualizar as compras de clientes fiéis e não fiéis
@@ -153,7 +154,7 @@ ggplot(compras_totais, aes(x = Fiel, y = TotalCompras, fill = Fiel)) +
   theme_minimal()
 ```
 
-**6. Resultado do Teste t**
+**#6. Resultado do Teste t\*\***
 
 Para determinar se clientes fiéis compram mais da mesma marca em comparação com clientes não fiéis, analisamos os resultados do teste t que compara o total de compras entre esses dois grupos. Aqui está um passo a passo de como você pode interpretar os resultados:
 
@@ -175,7 +176,7 @@ O teste t irá fornecer:
 
 -   **Médias das compras totais**: A média do total de compras para clientes fiéis e não fiéis.
 
-**7.Interpretação dos Resultados**
+**##7.Interpretação dos Resultados\*\***
 
 -   **Se o p-value for menor que 0,05**: Isso sugere que há uma diferença estatisticamente significativa entre os clientes fiéis e não fiéis no total de compras. Dependendo do sinal da diferença de médias, podemos concluir se os clientes fiéis compram mais ou menos da mesma marca do que os não fiéis.
 
@@ -183,7 +184,7 @@ O teste t irá fornecer:
 
 O resultado que você obteve a partir do teste t pode ser interpretado da seguinte maneira:
 
-**7.1 Resumo dos Resultados:**
+#7.1 Resumo dos Resultados:\*\*
 
 \*\* t-value (valor t): 4.3147 degrees of freedom (df): 46.551 p-value: 8.259e-05 (ou 0.00008259) 95% confidence interval (intervalo de confiança de 95%): Entre 569.5768 e 1565.1478 mean in group Não: 3029.459 mean in group Sim: 1962.097 Interpretação: p-value:
 
@@ -193,7 +194,7 @@ A média do total de compras para clientes não fiéis (grupo Não) é 3029.459.
 
 O intervalo de confiança de 95% para a diferença entre as médias dos grupos é de 569.5768 a 1565.1478. Como esse intervalo não inclui o zero, isso reforça a conclusão de que a diferença entre os grupos é estatisticamente significativa.
 
-**8. Conclusão:**
+##8. Conclusão:
 
 Com base nos resultados, podemos concluir que, ao contrário da hipótese original, clientes não fiéis compram mais da mesma marca em comparação com clientes fiéis. Essa diferença é estatisticamente significativa, o que significa que não é provável que essa diferença seja devido ao acaso.
 
