@@ -229,24 +229,4 @@ ggplot(compras_totais, aes(x = Fiel, y = TotalCompras, fill = Fiel)) +
        x = "Fidelidade", y = "Total de Compras") +
   theme_minimal()
 ```
-teste para a imagem do html 
-
-
-
-
-```{r}
-# Carregar pacotes necessários
-library(ggplot2)
-
-# Criar um boxplot e salvar como imagem
-g <- ggplot(compras_totais, aes(x = Fiel, y = TotalCompras, fill = Fiel)) +
-  geom_boxplot() +
-  labs(title = "Comparação de Compras entre Clientes Fiéis e Não Fiéis",
-       x = "Fidelidade", y = "Total de Compras") +
-  theme_minimal()
-
-# Salvar o gráfico como imagem PNG na pasta 'explicações sobre o projeto_files'
-ggsave("explicações sobre o projeto_files/boxplot_compras.png", plot = g, width = 8, height = 6)
-
-```
-
+esse boxplot é para testar imagens
