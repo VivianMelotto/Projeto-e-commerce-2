@@ -217,16 +217,3 @@ ggplot(compras_totais, aes(x = Fiel, y = TotalCompras, fill = Fiel)) +
 Os resultados do teste indicam que **clientes fiéis não compram mais da mesma marca** em comparação com clientes não fiéis. Na verdade, a média do total de compras é maior para os clientes não fiéis (`3029.459`) do que para os clientes fiéis (`1962.097`).
 
 Isso sugere que, em média, **clientes não fiéis gastam mais** na compra da mesma marca do que os clientes que são considerados fiéis. A diferença observada é estatisticamente significativa, o que significa que podemos confiar nesta conclusão com um alto grau de certeza.
-
-
-
-
-```{r}
-# Criar um boxplot para visualizar as compras de clientes fiéis e não fiéis
-ggplot(compras_totais, aes(x = Fiel, y = TotalCompras, fill = Fiel)) +
-  geom_boxplot() +
-  labs(title = "Comparação de Compras entre Clientes Fiéis e Não Fiéis",
-       x = "Fidelidade", y = "Total de Compras") +
-  theme_minimal()
-```
-esse boxplot é para testar imagens
