@@ -1,5 +1,5 @@
 # Descrição do Projeto
-Este projeto fictício de um e-commerce foi criado com o objetivo de testar a hipótese de que clientes fiéis compram mais produtos da mesma marca em comparação com clientes não fiéis. O projeto foi desenvolvido em R, utilizando diversos pacotes para análise de dados e visualização.
+Projeto fictício de um e-commerce que testará a hipótese de que : "clientes fiéis compram mais da mesma marca em comparação com clientes não fiéis.". O projeto foi desenvolvido em R, utilizando diversos pacotes para análise de dados e visualização.
 
 Estrutura do Projeto
 Instalação de Pacotes:
