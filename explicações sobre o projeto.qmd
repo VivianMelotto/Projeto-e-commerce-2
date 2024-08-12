@@ -1,12 +1,12 @@
-|                                      |
-|--------------------------------------|
-| title: "Explicações sobre o projeto" |
-| author: "Vivian Vense Melotto"       |
-| date: "2024-08-09"                   |
-| format:                              |
-| html:                                |
-| embed-resources: true                |
-| fig_caption: true                    |
+---
+title: "Explicações sobre o projeto"
+author: "Vivian Vense Melotto"
+date: "2024-08-09"
+format: 
+  html:
+    embed-resources: true
+    fig_caption: true
+---
 
 **\*\*Projeto fictício de um e-commerce que testará a hipótese de que : "clientes fiéis compram mais da mesma marca em comparação com clientes não fiéis."**
 
