@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Vivian Vense Melotto">
-<meta name="dcterms.date" content="2024-08-09">
 
-<title>Explicações sobre o projeto</title>
+<title>explicações-sobre-o-projeto</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -79,63 +77,44 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Explicações sobre o projeto</h1>
-</div>
 
 
 
-<div class="quarto-title-meta">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Vivian Vense Melotto </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">August 9, 2024</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p><strong>“Projeto fictício de um e-commerce que testará a hipótese de que clientes fiéis compram mais da mesma marca em comparação com clientes não fiéis.”</strong></p>
-<p><strong>##1. Instalação de pacotes**</strong></p>
-<p><strong>Passo 1:</strong> Instalar e Carregar os Pacotes Necessários # Instalar e carregar os pacotes necessários:</p>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td><strong>title: “Explicações sobre o projeto”</strong></td>
+</tr>
+<tr class="even">
+<td><strong>author: “Vivian Vense Melotto”</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>date: “2024-08-09”</strong></td>
+</tr>
+<tr class="even">
+<td>format:</td>
+</tr>
+<tr class="odd">
+<td>html:</td>
+</tr>
+<tr class="even">
+<td>embed-resources: true</td>
+</tr>
+<tr class="odd">
+<td>fig_caption: true</td>
+</tr>
+</tbody>
+</table>
+<p><strong>**Projeto fictício de um e-commerce que testará a hipótese de que : “clientes fiéis compram mais da mesma marca em comparação com clientes não fiéis.”</strong></p>
+<section id="instalação-de-pacotes." class="level1">
+<h1>1. Instalação de pacotes.</h1>
+<p><strong>Passo 1:</strong> Instalar e Carregar os Pacotes Necessários :</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"dplyr"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>pacote 'dplyr' desempacotado com sucesso e somas MD5 verificadas
-
-Os pacotes binários baixados estão em
-    C:\Users\Vivian\AppData\Local\Temp\RtmpwlLVRQ\downloaded_packages</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"ggplot2"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>pacote 'ggplot2' desempacotado com sucesso e somas MD5 verificadas
-
-Os pacotes binários baixados estão em
-    C:\Users\Vivian\AppData\Local\Temp\RtmpwlLVRQ\downloaded_packages</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyr"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>pacote 'tidyr' desempacotado com sucesso e somas MD5 verificadas
-
-Os pacotes binários baixados estão em
-    C:\Users\Vivian\AppData\Local\Temp\RtmpwlLVRQ\downloaded_packages</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages("dplyr")</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages("ggplot2")</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages("tidyr")</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>
 Anexando pacote: 'dplyr'</code></pre>
@@ -150,37 +129,48 @@ Anexando pacote: 'dplyr'</code></pre>
 
     intersect, setdiff, setequal, union</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p><strong>##2. Geração dos Dados Fictícios**</strong></p>
+</section>
+<section id="geração-dos-dados-fictícios." class="level1">
+<h1>2. Geração dos Dados Fictícios.</h1>
 <p>Agora, vamos gerar um conjunto de dados fictício com 100 clientes, 5 marcas e 500 compras. Cada compra será registrada com o cliente que a fez, a marca comprada e o valor da compra.</p>
-<p>#2.1 Definir um seed para reprodutibilidade**</p>
+<section id="definir-um-seed-para-reprodutibilidade." class="level2">
+<h2 class="anchored" data-anchor-id="definir-um-seed-para-reprodutibilidade.">2.1 Definir um seed para reprodutibilidade.</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>#2.2 Número de clientes, marcas e compras**</p>
+</section>
+<section id="número-de-clientes-marcas-e-compras." class="level2">
+<h2 class="anchored" data-anchor-id="número-de-clientes-marcas-e-compras.">2.2 Número de clientes, marcas e compras.</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>n_clients <span class="ot">&lt;-</span> <span class="dv">100</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>n_brands <span class="ot">&lt;-</span> <span class="dv">5</span></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>n_purchases <span class="ot">&lt;-</span> <span class="dv">500</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>n_clients <span class="ot">&lt;-</span> <span class="dv">100</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>n_brands <span class="ot">&lt;-</span> <span class="dv">5</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>n_purchases <span class="ot">&lt;-</span> <span class="dv">500</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>#2.3 Gerar os nomes dos clientes e marcas**</p>
+</section>
+<section id="gerar-os-nomes-dos-clientes-e-marcas." class="level2">
+<h2 class="anchored" data-anchor-id="gerar-os-nomes-dos-clientes-e-marcas.">2.3 Gerar os nomes dos clientes e marcas.</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>clientes <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="st">"Cliente"</span>, <span class="dv">1</span><span class="sc">:</span>n_clients)</span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>marcas <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="st">"Marca"</span>, <span class="dv">1</span><span class="sc">:</span>n_brands)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>clientes <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="st">"Cliente"</span>, <span class="dv">1</span><span class="sc">:</span>n_clients)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>marcas <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="st">"Marca"</span>, <span class="dv">1</span><span class="sc">:</span>n_brands)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>#2.4 Gerar dados de compras com cliente, marca e valor da compra**</p>
+</section>
+<section id="gerar-dados-de-compras-com-cliente-marca-e-valor-da-compra." class="level2">
+<h2 class="anchored" data-anchor-id="gerar-dados-de-compras-com-cliente-marca-e-valor-da-compra.">2.4 Gerar dados de compras com cliente, marca e valor da compra.</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">Cliente =</span> <span class="fu">sample</span>(clientes, n_purchases, <span class="at">replace =</span> <span class="cn">TRUE</span>),  <span class="co"># Cliente que fez a compra</span></span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">Marca =</span> <span class="fu">sample</span>(marcas, n_purchases, <span class="at">replace =</span> <span class="cn">TRUE</span>),      <span class="co"># Marca comprada</span></span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">ValorCompra =</span> <span class="fu">runif</span>(n_purchases, <span class="at">min =</span> <span class="dv">100</span>, <span class="at">max =</span> <span class="dv">1000</span>)   <span class="co"># Valor da compra (entre 100 e 1000)</span></span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">Cliente =</span> <span class="fu">sample</span>(clientes, n_purchases, <span class="at">replace =</span> <span class="cn">TRUE</span>),  <span class="co"># Cliente que fez a compra</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">Marca =</span> <span class="fu">sample</span>(marcas, n_purchases, <span class="at">replace =</span> <span class="cn">TRUE</span>),      <span class="co"># Marca comprada</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">ValorCompra =</span> <span class="fu">runif</span>(n_purchases, <span class="at">min =</span> <span class="dv">100</span>, <span class="at">max =</span> <span class="dv">1000</span>)   <span class="co"># Valor da compra (entre 100 e 1000)</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>#2.5 Exibir as primeiras linhas dos dados para verificar**</p>
+</section>
+<section id="exibir-as-primeiras-linhas-dos-dados-para-verificar." class="level2">
+<h2 class="anchored" data-anchor-id="exibir-as-primeiras-linhas-dos-dados-para-verificar.">2.5 Exibir as primeiras linhas dos dados para verificar.</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>     Cliente   Marca ValorCompra
 1 Cliente 31 Marca 3    456.3384
@@ -191,35 +181,47 @@ Anexando pacote: 'dplyr'</code></pre>
 6 Cliente 42 Marca 4    861.3422</code></pre>
 </div>
 </div>
-<p>##3. Identificação de Clientes Fiéis****</p>
+</section>
+</section>
+<section id="identificação-de-clientes-fiéis." class="level1">
+<h1>3. Identificação de Clientes Fiéis.</h1>
 <p>Agora vamos identificar quais clientes são “fiéis” a uma loja, ou seja, aqueles que compram frequentemente a mesma marca:</p>
-<p>#3.1 Calcular o número de compras por cliente e por marca</p>
+<section id="calcular-o-número-de-compras-por-cliente-e-por-marca." class="level2">
+<h2 class="anchored" data-anchor-id="calcular-o-número-de-compras-por-cliente-e-por-marca.">3.1 Calcular o número de compras por cliente e por marca.</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>compras_por_cliente_marca <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span></span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Cliente, Marca) <span class="sc">%&gt;%</span></span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">NumCompras =</span> <span class="fu">n</span>(), <span class="at">.groups =</span> <span class="st">'drop'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>compras_por_cliente_marca <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Cliente, Marca) <span class="sc">%&gt;%</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">NumCompras =</span> <span class="fu">n</span>(), <span class="at">.groups =</span> <span class="st">'drop'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>#3.2 Calcular a proporção de compras por marca para cada cliente**</p>
+</section>
+<section id="calcular-a-proporção-de-compras-por-marca-para-cada-cliente." class="level2">
+<h2 class="anchored" data-anchor-id="calcular-a-proporção-de-compras-por-marca-para-cada-cliente.">3.2 Calcular a proporção de compras por marca para cada cliente.</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>proporcao_compras <span class="ot">&lt;-</span> compras_por_cliente_marca <span class="sc">%&gt;%</span></span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Cliente) <span class="sc">%&gt;%</span></span>
-<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Proporcao =</span> NumCompras <span class="sc">/</span> <span class="fu">sum</span>(NumCompras))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>proporcao_compras <span class="ot">&lt;-</span> compras_por_cliente_marca <span class="sc">%&gt;%</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Cliente) <span class="sc">%&gt;%</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Proporcao =</span> NumCompras <span class="sc">/</span> <span class="fu">sum</span>(NumCompras))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>#3.3 Determinar a marca mais comprada por cada cliente**</p>
+</section>
+<section id="determinar-a-marca-mais-comprada-por-cada-cliente." class="level2">
+<h2 class="anchored" data-anchor-id="determinar-a-marca-mais-comprada-por-cada-cliente.">3.3 Determinar a marca mais comprada por cada cliente.</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>fidelidade_cliente <span class="ot">&lt;-</span> proporcao_compras <span class="sc">%&gt;%</span></span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">MarcaFrequente =</span> Marca[<span class="fu">which.max</span>(Proporcao)],</span>
-<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>            <span class="at">ProporcaoFrequente =</span> <span class="fu">max</span>(Proporcao))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>fidelidade_cliente <span class="ot">&lt;-</span> proporcao_compras <span class="sc">%&gt;%</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">MarcaFrequente =</span> Marca[<span class="fu">which.max</span>(Proporcao)],</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>            <span class="at">ProporcaoFrequente =</span> <span class="fu">max</span>(Proporcao))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>#3.4 Adicionar ao conjunto de dados a informação se o cliente é “fiel” ou não**</p>
+</section>
+<section id="adicionar-ao-conjunto-de-dados-a-informação-se-o-cliente-é-fiel-ou-não." class="level2">
+<h2 class="anchored" data-anchor-id="adicionar-ao-conjunto-de-dados-a-informação-se-o-cliente-é-fiel-ou-não.">3.4 Adicionar ao conjunto de dados a informação se o cliente é “fiel” ou não.</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span></span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(fidelidade_cliente, <span class="at">by =</span> <span class="st">"Cliente"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Fiel =</span> <span class="fu">ifelse</span>(ProporcaoFrequente <span class="sc">&gt;</span> <span class="fl">0.5</span>, <span class="st">"Sim"</span>, <span class="st">"Não"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(fidelidade_cliente, <span class="at">by =</span> <span class="st">"Cliente"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Fiel =</span> <span class="fu">ifelse</span>(ProporcaoFrequente <span class="sc">&gt;</span> <span class="fl">0.5</span>, <span class="st">"Sim"</span>, <span class="st">"Não"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>#3.5 Exibir as primeiras linhas do novo conjunto de dados</p>
+</section>
+<section id="exibir-as-primeiras-linhas-do-novo-conjunto-de-dados." class="level2">
+<h2 class="anchored" data-anchor-id="exibir-as-primeiras-linhas-do-novo-conjunto-de-dados.">3.5 Exibir as primeiras linhas do novo conjunto de dados.</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>     Cliente   Marca ValorCompra MarcaFrequente ProporcaoFrequente Fiel
 1 Cliente 31 Marca 3    456.3384        Marca 1          0.5000000  Não
@@ -230,21 +232,29 @@ Anexando pacote: 'dplyr'</code></pre>
 6 Cliente 42 Marca 4    861.3422        Marca 5          0.3333333  Não</code></pre>
 </div>
 </div>
-<p><strong>##4. Teste de Hipótese**</strong></p>
+</section>
+</section>
+<section id="teste-de-hipótese." class="level1">
+<h1>4. Teste de Hipótese.</h1>
 <p>Vamos testar a hipótese de que clientes fiéis compram mais da mesma marca do que os clientes não fiéis. Para isso, realizaremos um teste t:</p>
-<p>#4.1 Calcular o total de compras por cliente</p>
+<section id="calcular-o-total-de-compras-por-cliente." class="level2">
+<h2 class="anchored" data-anchor-id="calcular-o-total-de-compras-por-cliente.">4.1 Calcular o total de compras por cliente.</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>compras_totais <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span></span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Cliente, Fiel) <span class="sc">%&gt;%</span></span>
-<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">TotalCompras =</span> <span class="fu">sum</span>(ValorCompra), <span class="at">.groups =</span> <span class="st">'drop'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>compras_totais <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Cliente, Fiel) <span class="sc">%&gt;%</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">TotalCompras =</span> <span class="fu">sum</span>(ValorCompra), <span class="at">.groups =</span> <span class="st">'drop'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>#4.2 Realizar o teste t para comparar as médias**</p>
+</section>
+<section id="realizar-o-teste-t-para-comparar-as-médias." class="level2">
+<h2 class="anchored" data-anchor-id="realizar-o-teste-t-para-comparar-as-médias.">4.2 Realizar o teste t para comparar as médias.</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>teste_t <span class="ot">&lt;-</span> <span class="fu">t.test</span>(TotalCompras <span class="sc">~</span> Fiel, <span class="at">data =</span> compras_totais)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>teste_t <span class="ot">&lt;-</span> <span class="fu">t.test</span>(TotalCompras <span class="sc">~</span> Fiel, <span class="at">data =</span> compras_totais)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>#4.3 Exibir os resultados do teste t**</p>
+</section>
+<section id="exibir-os-resultados-do-teste-t." class="level2">
+<h2 class="anchored" data-anchor-id="exibir-os-resultados-do-teste-t.">4.3 Exibir os resultados do teste t.</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(teste_t)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(teste_t)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Welch Two Sample t-test
@@ -260,16 +270,20 @@ mean in group Não mean in group Sim
 </div>
 </div>
 <p>print(teste_t)</p>
-<p><strong>##5. Visualização dos Resultados</strong></p>
+</section>
+</section>
+<section id="visualização-dos-resultados." class="level1">
+<h1>5. Visualização dos Resultados.</h1>
 <p>Finalmente, vamos visualizar os resultados com um boxplot, comparando o total de compras entre clientes fiéis e não fiéis:</p>
-<p>#5.1 Criar um boxplot para visualizar as compras de clientes fiéis e não fiéis**</p>
+<section id="criar-um-boxplot-para-visualizar-as-compras-de-clientes-fiéis-e-não-fiéis." class="level2">
+<h2 class="anchored" data-anchor-id="criar-um-boxplot-para-visualizar-as-compras-de-clientes-fiéis-e-não-fiéis.">5.1 Criar um boxplot para visualizar as compras de clientes fiéis e não fiéis.</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Criar um boxplot para visualizar as compras de clientes fiéis e não fiéis</span></span>
-<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(compras_totais, <span class="fu">aes</span>(<span class="at">x =</span> Fiel, <span class="at">y =</span> TotalCompras, <span class="at">fill =</span> Fiel)) <span class="sc">+</span></span>
-<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
-<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Comparação de Compras entre Clientes Fiéis e Não Fiéis"</span>,</span>
-<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Fidelidade"</span>, <span class="at">y =</span> <span class="st">"Total de Compras"</span>) <span class="sc">+</span></span>
-<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Criar um boxplot para visualizar as compras de clientes fiéis e não fiéis</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(compras_totais, <span class="fu">aes</span>(<span class="at">x =</span> Fiel, <span class="at">y =</span> TotalCompras, <span class="at">fill =</span> Fiel)) <span class="sc">+</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Comparação de Compras entre Clientes Fiéis e Não Fiéis"</span>,</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Fidelidade"</span>, <span class="at">y =</span> <span class="st">"Total de Compras"</span>) <span class="sc">+</span></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -278,12 +292,15 @@ mean in group Não mean in group Sim
 </div>
 </div>
 </div>
-<p><strong>#6. Resultado do Teste t**</strong></p>
+</section>
+</section>
+<section id="resultado-do-teste-t." class="level1">
+<h1>6. Resultado do Teste t.</h1>
 <p>Para determinar se clientes fiéis compram mais da mesma marca em comparação com clientes não fiéis, analisamos os resultados do teste t que compara o total de compras entre esses dois grupos. Aqui está um passo a passo de como você pode interpretar os resultados:</p>
 <p>Depois de executar o código para o teste t, você obterá uma saída semelhante a esta:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>teste_t <span class="ot">&lt;-</span> <span class="fu">t.test</span>(TotalCompras <span class="sc">~</span> Fiel, <span class="at">data =</span> compras_totais)</span>
-<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(teste_t)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>teste_t <span class="ot">&lt;-</span> <span class="fu">t.test</span>(TotalCompras <span class="sc">~</span> Fiel, <span class="at">data =</span> compras_totais)</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(teste_t)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Welch Two Sample t-test
@@ -305,27 +322,34 @@ mean in group Não mean in group Sim
 <li><p><strong>Confiança Intervalo (Intervalo de Confiança)</strong>: Mostra a gama de valores que contêm a diferença média real com uma certa confiança (geralmente 95%).</p></li>
 <li><p><strong>Médias das compras totais</strong>: A média do total de compras para clientes fiéis e não fiéis.</p></li>
 </ul>
-<p><strong>##7.Interpretação dos Resultados**</strong></p>
+</section>
+<section id="interpretação-dos-resultados." class="level1">
+<h1>7.Interpretação dos Resultados.</h1>
 <ul>
 <li><p><strong>Se o p-value for menor que 0,05</strong>: Isso sugere que há uma diferença estatisticamente significativa entre os clientes fiéis e não fiéis no total de compras. Dependendo do sinal da diferença de médias, podemos concluir se os clientes fiéis compram mais ou menos da mesma marca do que os não fiéis.</p></li>
 <li><p><strong>Se o p-value for maior que 0,05</strong>: Isso sugere que não há uma diferença estatisticamente significativa entre os clientes fiéis e não fiéis no total de compras. Ou seja, não podemos afirmar com confiança que os clientes fiéis compram mais (ou menos) da mesma marca em comparação com os clientes não fiéis.</p></li>
 </ul>
 <p>O resultado que você obteve a partir do teste t pode ser interpretado da seguinte maneira:</p>
-<p>#7.1 Resumo dos Resultados:**</p>
+<section id="resumo-dos-resultados" class="level2">
+<h2 class="anchored" data-anchor-id="resumo-dos-resultados">7.1 Resumo dos Resultados:</h2>
 <p>** t-value (valor t): 4.3147 degrees of freedom (df): 46.551 p-value: 8.259e-05 (ou 0.00008259) 95% confidence interval (intervalo de confiança de 95%): Entre 569.5768 e 1565.1478 mean in group Não: 3029.459 mean in group Sim: 1962.097 Interpretação: p-value:</p>
 <p>O p-value é muito pequeno (8.259e-05), o que significa que a diferença nas médias do total de compras entre clientes fiéis e não fiéis é estatisticamente significativa. Como esse valor é menor que 0,05 (o nível de significância comum), rejeitamos a hipótese nula de que não há diferença entre as médias dos dois grupos. Ou seja, há evidências suficientes para afirmar que existe uma diferença significativa no comportamento de compra entre clientes fiéis e não fiéis. Médias dos Grupos:</p>
 <p>A média do total de compras para clientes não fiéis (grupo Não) é 3029.459. A média do total de compras para clientes fiéis (grupo Sim) é 1962.097. Isso indica que, em média, clientes não fiéis gastam mais (em termos de compras totais) do que clientes fiéis. Intervalo de Confiança:</p>
 <p>O intervalo de confiança de 95% para a diferença entre as médias dos grupos é de 569.5768 a 1565.1478. Como esse intervalo não inclui o zero, isso reforça a conclusão de que a diferença entre os grupos é estatisticamente significativa.</p>
-<p>##8. Conclusão:</p>
+</section>
+</section>
+<section id="conclusão" class="level1">
+<h1>8. Conclusão:</h1>
 <p>Com base nos resultados, podemos concluir que, ao contrário da hipótese original, clientes não fiéis compram mais da mesma marca em comparação com clientes fiéis. Essa diferença é estatisticamente significativa, o que significa que não é provável que essa diferença seja devido ao acaso.</p>
-<p><strong>Resultado apresentado no grafico de Boxplot :</strong></p>
+<section id="resultado-apresentado-no-grafico-de-boxplot" class="level2">
+<h2 class="anchored" data-anchor-id="resultado-apresentado-no-grafico-de-boxplot">8.1 Resultado apresentado no grafico de Boxplot :</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Criar um boxplot para visualizar as compras de clientes fiéis e não fiéis</span></span>
-<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(compras_totais, <span class="fu">aes</span>(<span class="at">x =</span> Fiel, <span class="at">y =</span> TotalCompras, <span class="at">fill =</span> Fiel)) <span class="sc">+</span></span>
-<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
-<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Comparação de Compras entre Clientes Fiéis e Não Fiéis"</span>,</span>
-<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Fidelidade"</span>, <span class="at">y =</span> <span class="st">"Total de Compras"</span>) <span class="sc">+</span></span>
-<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Criar um boxplot para visualizar as compras de clientes fiéis e não fiéis</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(compras_totais, <span class="fu">aes</span>(<span class="at">x =</span> Fiel, <span class="at">y =</span> TotalCompras, <span class="at">fill =</span> Fiel)) <span class="sc">+</span></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Comparação de Compras entre Clientes Fiéis e Não Fiéis"</span>,</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Fidelidade"</span>, <span class="at">y =</span> <span class="st">"Total de Compras"</span>) <span class="sc">+</span></span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -336,7 +360,8 @@ mean in group Não mean in group Sim
 </div>
 <p>Os resultados do teste indicam que <strong>clientes fiéis não compram mais da mesma marca</strong> em comparação com clientes não fiéis. Na verdade, a média do total de compras é maior para os clientes não fiéis (<code>3029.459</code>) do que para os clientes fiéis (<code>1962.097</code>).</p>
 <p>Isso sugere que, em média, <strong>clientes não fiéis gastam mais</strong> na compra da mesma marca do que os clientes que são considerados fiéis. A diferença observada é estatisticamente significativa, o que significa que podemos confiar nesta conclusão com um alto grau de certeza.</p>
-<p>*teste</p>
+</section>
+</section>
 
 </main>
 <!-- /main column -->
